@@ -1,14 +1,14 @@
 import turtle
 import time
 import math
-
+import sys
 
 try:
     max_n=int(input("Size of spiral: "))
     font_size= int(input("Font size(3 or smaller for spiral > 2000): "))
 except ValueError:
     print("Please enter valid integers for size and font size.")
-    return
+    exit()
 
 def is_prime(n):
     if n<=1:
